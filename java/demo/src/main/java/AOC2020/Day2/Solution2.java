@@ -11,7 +11,7 @@ public class Solution2 {
     public static void main(String[] args) {
         List<String> data = new ArrayList<String>();
         try {
-            File myFile = new File("src/main/java/com/example/input2.txt");
+            File myFile = new File("java/demo/src/main/java/AOC2020/Input/input2.txt");
             Scanner myReader = new Scanner(myFile);
             while (myReader.hasNextLine()) {
                 data.add(myReader.nextLine());
