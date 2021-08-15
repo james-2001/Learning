@@ -12,7 +12,6 @@ It can be verified that the sum of the numbers on the diagonals is 101.
 What is the sum of the numbers on the diagonals in a 1001 by 1001 spiral formed in the same way?
 -}
 
-import Data.List (nub)
+import Data.Set (fromList)
 diagonals :: (Integral a) => a -> a
-diagonals x = sum (nub [a*a -b*(a-1)| a <- [1,3..x], b<-[0..3]])
-
+diagonals x = sum (fromList [a*a -b*(a-1)| a <- [1,3..x], b<-[0..3]])
